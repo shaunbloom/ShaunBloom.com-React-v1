@@ -1,7 +1,7 @@
 var React = require('react');
 var cx = require('react-classset');
 var ArtThumbnail = require('./ArtThumbnail');
-var artData = require('../../../../../data/art.json');
+var artData = require('../../data/art.json');
 
 var ArtPage = React.createClass({
 
