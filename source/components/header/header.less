@@ -1,0 +1,41 @@
+#header-main {
+	position:absolute;
+	margin:0 auto;
+	width:700px;
+	height:0px;
+	padding:0px;	
+	opacity: 0;
+
+	&.loaded {
+		margin: -45px auto 0;
+		opacity: 1;
+		-webkit-transition: margin 1s ease;
+	    -moz-transition: margin 1s ease;
+	    -o-transition: margin 1s ease;
+    	transition: margin 1s ease,
+    				opacity .01s ease;
+	}
+
+	nav ul {
+		margin:0;
+		padding:0;
+
+		li {
+			display:inline-block;
+			font-size:30px;
+			font-weight:bold;
+			text-shadow: #000 5pt 5pt 3pt;
+			text-align:center;
+			padding:0 43px 0 0;			
+
+			a {
+				text-decoration:none;
+				color:#FFF;	
+
+				&:hover {
+					color:#F00;	
+				}
+			}
+		}
+	}
+}

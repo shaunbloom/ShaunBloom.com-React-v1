@@ -1,0 +1,75 @@
+#portfolio-page {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 5px #000000;
+    margin: 20px auto 30px;
+    overflow: hidden;
+    padding: 0 50px 20px;
+    width: 700px;
+    color: #666;
+    position: absolute;
+    top: 0;
+    display: block;
+    z-index: 100;
+
+    article {
+        position: relative;
+        margin: 75px 0;
+        min-height: 100px;
+
+        &.jqueryVersion {
+            margin: 25px 0 75px;
+        }
+
+        a img {
+            height: 120px;
+            width: 120px;
+            display: inline-block;
+            margin-right: 20px;
+            box-shadow: 4px 4px 20px #000;
+            position: absolute;
+            top: 5px;
+            left: 0px;
+            border: 2px solid #333;
+
+            &:hover {
+                top: 3px;
+                left: 3px;
+                box-shadow: 2px 2px 15px #000;
+            }
+        }               
+
+        .description {
+            font-size: .8em;
+            font-weight: 400;
+            width: 570px;
+            vertical-align: top;
+            position: absolute;
+            top: 0;
+            left: 145px;
+
+            .title {
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+
+            a {
+                i {
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    font-size: 1.5em;
+                    color: #666;
+
+                    span {
+                        color: #666;
+                        font-size: .7em;
+                        vertical-align: top;
+                        margin: 2px 0 0 5px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

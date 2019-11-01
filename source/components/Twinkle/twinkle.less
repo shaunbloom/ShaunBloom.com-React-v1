@@ -1,0 +1,25 @@
+#twinkle {
+    background: url("http://images.shaunbloom.com/twinkle.png") repeat scroll 0 0 transparent;
+    height: 85px;
+    position: absolute;
+    right: 122px;
+    top: 85px;
+    width: 75px;
+	opacity: 0;
+
+	&.loaded {
+		opacity: 1;
+		-webkit-transition: opacity .5s ease;
+    	-moz-transition: opacity .5s ease;
+    	-o-transition: opacity .5s ease;
+		transition: opacity .5s ease;
+	}
+
+	&.visible {
+		opacity: 0;
+		-webkit-transition: opacity .5s ease;
+    	-moz-transition: opacity .5s ease;
+    	-o-transition: opacity .5s ease;
+		transition: opacity .5s ease;
+	}
+}

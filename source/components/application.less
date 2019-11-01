@@ -1,0 +1,176 @@
+html {
+	overflow-y:scroll;	
+}
+body {
+	background:url(http://images.shaunbloom.com//bg3.jpg) 0 0 #0a0a0a fixed;
+	background-size: cover;
+	padding:0;
+	margin:0;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+}
+img {
+	border:none;
+}
+a {
+	border:none;	
+}
+a:active, a:focus {
+	outline: none;
+}
+
+.framework-nav {
+	height: 30px;
+    padding: 5px 0 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -42px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &.loaded {
+    	margin-top: 0px;
+		-webkit-transition: margin-top .7s ease;
+    	-moz-transition: margin-top .7s ease;
+    	-o-transition: margin-top .7s ease;
+		transition: margin-top .7s ease-in;
+    }
+
+	ul {
+	    padding: 0;
+		margin: 0;
+		z-index: 1;
+			
+		li {
+			list-style-type: none;
+		    display: inline-block;
+		    width: 19%;
+		    margin: 0 auto;
+		    text-align: center;
+
+			a {
+				color: white;
+				text-decoration: none;
+				text-shadow: 4px 4px #000;
+				font-size: 13px;
+
+				&:hover {
+					color:red;			
+				}
+
+				&.selected {
+					font-weight: bold;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+#wrapper {
+	width:800px;
+	margin:0 auto;
+
+	#content {
+		border: 1px solid #FFF;
+	    width: 700px;
+	    height: 0;
+	    display: block;
+	    z-index: 90;
+	    position: relative;
+	    margin: 243px auto 0;
+	    opacity: 0;
+
+		&.drop-shadow {
+			-moz-box-shadow: 10px 10px 10px #000;
+			-webkit-box-shadow: 10px 10px 10px #000;
+			-o-box-shadow: 10px 10px 10px #000;
+			box-shadow: 0px 20px 100px #000;	
+		}
+
+		&.loaded {
+			height: 402px;
+			opacity: 1;
+			display: block;
+		    -webkit-transition: all 2s ease;
+		    -moz-transition: all 2s ease;
+		    -o-transition: all 2s ease;
+	    	transition: all 2s ease;
+		}
+
+		.background {
+		    background-color: #000000;
+		    background-image: url("http://images.shaunbloom.com//face.png");
+		    background-repeat: no-repeat;
+		    display: block;
+		    height: 372px;
+		    padding: 15px 25px;
+		    position: relative;
+		    opacity: 0;
+		    background-position: 377px 0px;
+
+		    &.loaded {
+				opacity: 1;
+				-webkit-transition: opacity 2s ease;
+			    -moz-transition: opacity 2s ease;
+			    -o-transition: opacity 2s ease;
+		    	transition: opacity 2s ease;
+			}
+		}
+	}
+
+	#close {
+	    background: url("http://images.shaunbloom.com//close-button.png") no-repeat scroll 0 0 transparent;
+	    cursor: pointer;
+	    display: block;
+	    height: 34px;
+	    position: absolute;
+	    right: 10px;
+	    width: 34px;
+	    z-index: 3;
+		top:10px;
+	}
+
+
+
+
+	section.dynamic-content h1 {
+		float:left;
+		font-size:24px;
+	}
+	#dynamic-content {
+		display:none;	
+		position:relative;
+		top:0;
+		left:0;
+		z-index:2;
+		color:#666;
+
+		p, ul {
+			float:left;
+			clear:left;
+		}
+
+	}
+
+	.cross-fade-leave {
+	  opacity: 1;
+	}
+	.cross-fade-leave.cross-fade-leave-active {
+	  opacity: 0;
+	  transition: opacity 1s ease-in;
+	}
+
+	.cross-fade-enter {
+	  opacity: 0;
+	}
+	.cross-fade-enter.cross-fade-enter-active {
+	  opacity: 1;
+	  transition: opacity 1s ease-in;
+	}
+
+	.cross-fade-height {
+	  transition: height .5s ease-in-out;
+	}
+}
