@@ -8,9 +8,6 @@ var ArtThumbnail = React.createClass({
 	},
 
 	getPurchaseOptions: function (artData) {
-
-		console.log("smallpaper: ", artData.smallpaper);
-
 		var qsp = artData.title + artData.year;
 		qsp = qsp.toLowerCase();
 		if (artData.purchase) {

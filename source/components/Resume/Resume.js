@@ -12,11 +12,11 @@ var ResumePage = React.createClass({
 		return (
 			<div id="resume-page">
 				<div id="close" onClick={this.props.handleCloseClicked}></div>
-				<h1 className="pageTitle">Resume &mdash; <a href="//shaunbloom.com/download/Shaun_Bloom_Resume.docx">DOWNLOAD</a></h1>
+				<h1 className="pageTitle">Resume &mdash; <a href="//shaunbloom.com/download/Shaun_Bloom--Resume.docx">DOWNLOAD</a></h1>
 				<p><strong>Objective:</strong> To use my experience and knowledge of web-based technologies, object oriented programming, and application development in a high tech solution based environment.<br/><br/></p>
 				     
 				<p><strong>Professional Experience:</strong></p>
-				<div class="job-employer">
+				<div className="job-employer">
 	                <article>
 	                    <p><strong><em>Disney</em></strong> • Seattle, WA   Jan 2016 – Nov 2019</p>
 	                    <p><strong>Senior Frontend Engineer</strong></p>

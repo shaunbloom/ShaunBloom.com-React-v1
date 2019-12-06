@@ -20356,9 +20356,6 @@ var ArtThumbnail = React.createClass({
 	},
 
 	getPurchaseOptions: function (artData) {
-
-		console.log("smallpaper: ", artData.smallpaper);
-
 		var qsp = artData.title + artData.year;
 		qsp = qsp.toLowerCase();
 		if (artData.purchase) {
@@ -20518,7 +20515,26 @@ var ContactContent = React.createClass({
 							React.createElement(
 								'a',
 								{ href: 'http://www.facebook.com/shaun.bloom', target: '_blank' },
-								'www.facebook.com/shaun.bloom'
+								'www.facebook.com/shaunbloom'
+							)
+						)
+					),
+					React.createElement(
+						'tr',
+						null,
+						React.createElement(
+							'td',
+							{ className: 'name' },
+							'LinkedIn:'
+						),
+						React.createElement(
+							'td',
+							{ className: 'value' },
+							'\xA0\xA0',
+							React.createElement(
+								'a',
+								{ href: 'https://www.linkedin.com/in/shaun-bloom-7ab270a9/', target: '_blank' },
+								'www.linkedin.com/shaunbloom'
 							)
 						)
 					),
@@ -20537,7 +20553,7 @@ var ContactContent = React.createClass({
 							React.createElement(
 								'a',
 								{ href: 'https://github.com/shaunbloom', target: '_blank' },
-								'www.github.com/shaunbloom/'
+								'www.github.com/shaunbloom'
 							)
 						)
 					)
@@ -21063,7 +21079,7 @@ var ResumePage = React.createClass({
 				'Resume \u2014 ',
 				React.createElement(
 					'a',
-					{ href: '//shaunbloom.com/download/Shaun_Bloom_Resume.docx' },
+					{ href: '//shaunbloom.com/download/Shaun_Bloom--Resume.docx' },
 					'DOWNLOAD'
 				)
 			),
@@ -21090,7 +21106,7 @@ var ResumePage = React.createClass({
 			),
 			React.createElement(
 				'div',
-				{ 'class': 'job-employer' },
+				{ className: 'job-employer' },
 				React.createElement(
 					'article',
 					null,

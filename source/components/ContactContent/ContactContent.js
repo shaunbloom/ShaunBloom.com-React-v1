@@ -41,11 +41,15 @@ var ContactContent = React.createClass({
 					    </tr>
 					    <tr>
 					        <td className="name">Facebook:</td> 
-					        <td className="value">&nbsp;&nbsp;<a href="http://www.facebook.com/shaun.bloom" target="_blank">www.facebook.com/shaun.bloom</a></td>    
+					        <td className="value">&nbsp;&nbsp;<a href="http://www.facebook.com/shaun.bloom" target="_blank">www.facebook.com/shaunbloom</a></td>    
 					    </tr>
 					    <tr>
+                            <td className="name">LinkedIn:</td> 
+                            <td className="value">&nbsp;&nbsp;<a href="https://www.linkedin.com/in/shaun-bloom-7ab270a9/" target="_blank">www.linkedin.com/shaunbloom</a></td>    
+                        </tr>
+					    <tr>
 					        <td className="name">Github:</td> 
-					        <td className="value">&nbsp;&nbsp;<a href="https://github.com/shaunbloom" target="_blank">www.github.com/shaunbloom/</a></td>    
+					        <td className="value">&nbsp;&nbsp;<a href="https://github.com/shaunbloom" target="_blank">www.github.com/shaunbloom</a></td>    
 					    </tr>
 				    </tbody>
 				</table>
