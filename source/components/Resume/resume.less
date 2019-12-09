@@ -11,6 +11,7 @@
     top: 0;
     display: block;
     z-index: 100;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
 
     h1 {
 	    display: block;
@@ -29,19 +30,188 @@
 	    }
     }
 
-    ul li {
-		margin-bottom:5px;	
+    .title {
+    	font-size: 24px
+    }
+
+    .download-link {
+    	color: #f56942;
+    	float: right;
+	    font-size: 14px;
+	    text-decoration: none;
+	    margin: 4px 5px 0 0;
+
+	    &:hover {
+	    	text-decoration: underline;
+	    };
+    }
+
+    header {
+    	color: #f56942;
+	    font-size: 30px;
+	    border-bottom: 1px solid #75706e;
+	    margin-bottom: 2px;
+	    text-align: center;
+	    letter-spacing: 5px;
+
+    	.sub-text {
+    		color: #75706e;
+    		font-size: 20px;
+    		font-style: italic;
+    		letter-spacing: normal;
+    	}
+    }
+    .contact-info {
+    	background-color: #eee;
+    	display: flex;
+			flex-wrap: nowrap;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: flex-end;
+    	color: #5e5b5a;
+    	padding: 3px 0;
+
+    	i {
+    		font-size: 17px;
+    	}
+    	.contact-info-text {
+	    	font-size: 14px;
+			padding: 0 9px 0 2px;
+
+	    	a {
+	    		color: #5e5b5a;
+	    	}
+	    }
+    }
+
+    .resume-body {
+    	padding: 0 20px;
+    }
+
+    .summary {
+    	.column-a {
+			float: left;
+			width: 65%;
+			padding-right: 20px;
+
+			h2 {
+				font-size: 23px;
+				color: #f56942;
+				letter-spacing: 5px;
+				font-weight: normal;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+			}
+			.summary-text {
+				font-size: 16px;
+				margin-bottom: 20px;
+			}
+		}
+
+		.column-b {
+			float: right;
+			width: 30%;
+
+			h2 {
+				font-size: 20px;
+				color: #5e5b5a;
+				letter-spacing: 2px;
+				font-weight: normal;
+				border-bottom: 1px solid #5e5b5a;
+				text-transform: uppercase;
+				padding-top: 5px;
+				margin-bottom: 5px;
+			}
+
+			ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+
+				li {
+					font-size: 16px;
+					font-weight: bold;
+					line-height: 27px;
+				}
+			}
+		}
+    }
+
+    .professional-experience {
+    	clear: both;
+
+    	.job {
+
+    		.company {
+    			background-color: #eee;
+    			color: #5e5b5a;
+    			font-weight: bold;
+    			padding: 3px;
+    			margin-bottom: 2px;
+    			clear: both;
+
+    			.company-date {
+    				float: right;
+    			}
+    		}
+
+    		.title {
+    			color: #f56942;
+    			text-transform: uppercase;
+    			margin-bottom: 4px;
+    			font-size: 17px;
+    		}
+
+    		.frameworks-tools {
+    			color: #5e5b5a;
+    			font-style: italic;
+    		}
+
+    		.responsibilities {
+    			ul {
+    				list-style-type: square;
+    				margin: 5px 0 20px 0;
+
+    				li {
+    					padding: 3px 0;
+    				}
+    			}
+    		}
+    	}
+    }
+
+    .additional-engagements {
+		.title {
+			color: #f56942;
+			font-size: 17px;
+		}
 	}
 
-
-	.job-employer {
-		clear:both;	
-		display:block;
-		overflow:hidden;
-		margin-bottom:20px;
-
-		strong {
-			margin-bottom:10px;
+	.special-projects {
+		.project {
+			margin: 5px 0;
 		}
+
+		a {
+			color: #f56942;
+		}
+	}
+
+	.ongoing-recent {
+		.training {
+			margin: 5px 0;
+		}
+	}
+
+	.professional-experience, .special-projects,  .ongoing-recent {
+		h2 {
+    		border-bottom: 1px solid #5e5b5a;
+			text-transform: uppercase;
+			font-size: 20px;
+			color: #75706e;
+			letter-spacing: 5px;
+			margin-bottom: 0;
+			font-weight: normal;
+    	}
 	}
 }
